@@ -1,4 +1,4 @@
-![logo](src/Client/media/logo.png) [![Build Status](https://travis-ci.org/melanchat/melanchat.svg?branch=master)](https://travis-ci.com/melanchat/melanchat)
+![logo](src/Client/media/logo.png) [![Build Status](https://travis-ci.org/melanchat/melanchat.svg?branch=master)](https://travis-ci.com/melanchat/melanchat) <h1> BootCamp </h1>
 
 BootCamp is a fork of melonchat at https://github.com/melonchat/melonchat, with the bootstrap of IHP at https://github.com/digitallyinduced/ihp
 
