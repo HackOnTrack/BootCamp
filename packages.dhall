@@ -121,7 +121,96 @@ let upstream =
       https://github.com/purescript/package-sets/releases/download/psc-0.13.8-20200615/packages.dhall sha256:5d0cfad9408c84db0a3fdcea2d708f9ed8f64297e164dc57a7cf6328706df93a
 
 let overrides = {=}
+let additions =
+      { payload =
+        { dependencies =
+          [ "aff"
+          , "affjax"
+          , "console"
+          , "debug"
+          , "effect"
+          , "foreign-generic"
+          , "node-fs"
+          , "node-fs-aff"
+          , "node-http"
+          , "prelude"
+          , "psci-support"
+          , "record"
+          , "simple-json"
+          , "stringutils"
+          , "test-unit"
+          , "typelevel-prelude"
+          ]
+        , repo = "https://github.com/hoodunit/purescript-payload.git"
+        , version = "v0.3.1"
+        }
+      , postgresql-client =
+        { dependencies =
+          [ "aff"
+          , "argonaut"
+          , "arrays"
+          , "assert"
+          , "bifunctors"
+          , "bytestrings"
+          , "console"
+          , "datetime"
+          , "decimals"
+          , "effect"
+          , "either"
+          , "exceptions"
+          , "foldable-traversable"
+          , "foreign"
+          , "foreign-generic"
+          , "foreign-object"
+          , "js-date"
+          , "lists"
+          , "maybe"
+          , "newtype"
+          , "nullable"
+          , "prelude"
+          , "psci-support"
+          , "string-parsers"
+          , "test-unit"
+          , "transformers"
+          , "tuples"
+          ]
+        , repo = "https://github.com/rightfold/purescript-postgresql-client.git"
+        , version = "v3.0.2"
+        }
+      , browser-cookies =
+        { dependencies =
+          [ "prelude"
+          , "console"
+          , "effect"
+          , "maybe"
+          , "foldable-traversable"
+          , "strings"
+          , "js-date"
+          ]
+        , repo = "https://github.com/vilu/purescript-browser-cookies.git"
+        , version = "v0.0.1"
+        }
+      , flame =
+        { dependencies =
+          [ "prelude"
+          , "console"
+          , "effect"
+          , "web-events"
+          , "web-dom"
+          , "web-html"
+          , "nullable"
+          , "aff"
+          , "signal"
+          , "foreign-object"
+          , "argonaut-generic"
+          ]
+        , repo = "https://github.com/easafe/purescript-flame.git"
+        , version = "f35c4b7d16e59352f666324a06a9c51c0e8ddef0"
+        }
+      }
 
-let additions = {=}
+in  (    upstream
+    //  overrides
+    //  additions)
 
 in  upstream // overrides // additions
