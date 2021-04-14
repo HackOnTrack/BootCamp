@@ -7,3 +7,7 @@ import Web.Types
 -- Generator Marker
 
 instance AutoRoute DashboardController
+
+instance AutoRoute SessionsController
+
+instance AutoRoute AdminsController
