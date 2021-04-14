@@ -8,6 +8,13 @@
   , "debug"
   , "effect"
   , "enums"
+  , "sequences"
+  , "erl-cowboy"
+  , "erl-pinto"
+  , "erl-stetson"
+  , "erl-logger"
+  , "simple-json"
+  , "erl-simplebus"
   , "exceptions"
   , "flame"
   , "foreign-object"
@@ -34,4 +41,5 @@
   ]
 , packages = ./packages.dhall
 , sources = ["halogen/**/*.purs", "src/**/*.purs", "test/**/*.purs"]
+, backend = "purerl" 
 }
