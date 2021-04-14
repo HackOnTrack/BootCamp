@@ -12,6 +12,15 @@ SET row_security = off;
 
 SET SESSION AUTHORIZATION DEFAULT;
 
+ALTER TABLE public.admins DISABLE TRIGGER ALL;
+
+ALTER TABLE public.admins ENABLE TRIGGER ALL;
+
+ALTER TABLE public.users DISABLE TRIGGER ALL;
+
+ALTER TABLE public.users ENABLE TRIGGER ALL;
+
+
 ALTER TABLE public.events DISABLE TRIGGER ALL;
 
 INSERT INTO public.events (id, body, created_at) VALUES ('feca0c51-4245-4774-a717-b5bbae93e431', 'CustomUser created room IHP', '2021-02-24 14:29:43.650706-05');
