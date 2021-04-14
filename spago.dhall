@@ -2,17 +2,29 @@
 , repository = "https://github.com/HackOnTrack/BootCamp"
 , dependencies =
   [ "affjax"
+  , "aff"
   , "argonaut-generic"
   , "browser-cookies"
   , "console"
+  , "canvas"
   , "debug"
   , "effect"
   , "enums"
+  , "exists"
+  , "sequences"
+  , "erl-cowboy"
+  , "erl-pinto"
+  , "erl-stetson"
+  , "erl-logger"
+  , "simple-json"
+  , "erl-simplebus"
   , "exceptions"
   , "flame"
+  , "filterable"
   , "foreign-object"
   , "form-urlencoded"
   , "http-methods"
+  , "js-timers"
   , "node-fs"
   , "node-process"
   , "now"
@@ -22,16 +34,23 @@
   , "psci-support"
   , "read"
   , "run"
+  , "routing-duplex"
   , "simple-jwt"
+  , "simple-json"
+  , "st"
+  , "signal"
   , "unordered-collections"
   , "uuid"
   , "web-dom"
   , "web-socket"
   , "web-storage"
   , "web-uievents",
+  "web-html",
+  "web-dom",
   "test-unit",
   "halogen"
   ]
 , packages = ./packages.dhall
 , sources = ["halogen/**/*.purs", "src/**/*.purs", "test/**/*.purs"]
+, backend = "purerl" 
 }
