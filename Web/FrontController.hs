@@ -16,6 +16,7 @@ instance FrontController WebApplication where
   controllers =
     [ startPage DashboardAction,
       parseRoute @DashboardController
+    , parseRoute @SessionsController -- <--------------- add this
       -- Generator Marker
     , parseRoute @AdminsController
     ]
