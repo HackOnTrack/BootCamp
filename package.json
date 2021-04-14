@@ -35,6 +35,7 @@
     "purs-loader": "^3.7.1",
     "webpack": "^5.0.0",
     "webpack-bundle-analyzer": "^4.3.0",
+    "parcel-bundler": "^1.12.4"
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
