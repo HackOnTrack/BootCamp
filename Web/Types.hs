@@ -1,10 +1,18 @@
 module Web.Types where
 
-import IHP.Prelude
-import IHP.ModelSupport
 import Generated.Types
+import IHP.ModelSupport
+import IHP.Prelude
 
-data WebApplication = WebApplication deriving (Eq, Show)
+data WebApplication
+  = WebApplication
+  deriving (Eq, Show)
 
-
-data StaticController = WelcomeAction deriving (Eq, Show, Data)
+data DashboardController
+  = DashboardAction
+  | RoomDashboardAction {roomId :: Id Room}
+  | NewUserDashboardAction
+  | CreateUserDashboardAction
+  | CreateRoomDashboardAction
+  | CreateMessageDashboardAction {roomId :: Id Room}
+  deriving (Eq, Show, Data)
