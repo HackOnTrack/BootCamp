@@ -34,6 +34,42 @@ defaultLayout inner = H.docTypeHtml ! A.lang "en" $ [hsx|
 
 navbar :: Html
 navbar = [hsx|
+<nav class="navbar navbar-light bg-light navbar-expand-lg">
+    <a class="navbar-brand" href="/">Menu Admin</a>
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+           <a class="nav-link" href={ClubsAction}>Clubs</a>
+           <!-- Clubs -->
+        </li>
+    <!--  -->
+       <li class="nav-item">
+        <a class="nav-link" href={TournoisAction}>Tournois</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={GymnasesAction}>Gymnases</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={EquipesAction}>Equipes</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={PersonnesAction}>Personnes</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={MatchsAction}>Matchs</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={TerrainsAction}>Terrains</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={PouleEquipesAction}>Equipes de Poules</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={PouleMatchsAction}>Matchs de Poule</a>
+        </li>
+    <!--  -->
+    </ul>
+</nav>
+
 <nav x-data="{ mobileMenu: false }" class="bg-gray-800">
   <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
     <div class="relative flex items-center justify-between h-16">
@@ -230,3 +266,4 @@ metaTags = [hsx|
     <meta property="og:url" content="TODO"/>
     <meta property="og:description" content="TODO"/>
 |]
+
